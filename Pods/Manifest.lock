@@ -2,19 +2,23 @@ PODS:
   - AMapFoundation-NO-IDFA (1.5.5)
   - AMapLocation-NO-IDFA (2.6.1):
     - AMapFoundation-NO-IDFA (~> 1.4)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - AMapLocation-NO-IDFA
+  - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AMapFoundation-NO-IDFA
     - AMapLocation-NO-IDFA
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   AMapFoundation-NO-IDFA: a09d8cef57c10d4f841595829a574bcea67fc323
   AMapLocation-NO-IDFA: ffd69b8b88f553d0b252d4967bf301ad2afff9c0
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 9fbfa288981cca01e805ba234de86b9f3b42b038
+PODFILE CHECKSUM: 11dddae4d24e019bbb5d417bcefde4a8f2ae3e90
 
 COCOAPODS: 1.6.0.beta.2

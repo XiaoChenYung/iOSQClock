@@ -20,6 +20,10 @@
 		7910D6D521C7A55C00DCE4A5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D6D421C7A55C00DCE4A5 /* UIColor+Hex.m */; };
 		7910D6D821C7A7CB00DCE4A5 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D6D721C7A7CB00DCE4A5 /* NavigationViewController.m */; };
 		792C5C6121C89C5B00A83FCE /* MeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792C5C6021C89C5B00A83FCE /* MeTableViewController.m */; };
+		792C5C6421C8A10900A83FCE /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792C5C6321C8A10900A83FCE /* IntroduceViewController.m */; };
+		792C5C6721C8A11B00A83FCE /* OpenSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792C5C6621C8A11B00A83FCE /* OpenSourceViewController.m */; };
+		792C5C6921C8A2BA00A83FCE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792C5C6821C8A2B900A83FCE /* WebKit.framework */; };
+		792C5C6C21C8A72B00A83FCE /* CTDateConvertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 792C5C6B21C8A72A00A83FCE /* CTDateConvertTool.m */; };
 		AB6E5083DF885CC2252BC271 /* libPods-iOSQClock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE59BA0A6D870A183549CA1 /* libPods-iOSQClock.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,13 @@
 		7910D6D721C7A7CB00DCE4A5 /* NavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		792C5C5F21C89C5B00A83FCE /* MeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewController.h; sourceTree = "<group>"; };
 		792C5C6021C89C5B00A83FCE /* MeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewController.m; sourceTree = "<group>"; };
+		792C5C6221C8A10900A83FCE /* IntroduceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroduceViewController.h; sourceTree = "<group>"; };
+		792C5C6321C8A10900A83FCE /* IntroduceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroduceViewController.m; sourceTree = "<group>"; };
+		792C5C6521C8A11B00A83FCE /* OpenSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenSourceViewController.h; sourceTree = "<group>"; };
+		792C5C6621C8A11B00A83FCE /* OpenSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenSourceViewController.m; sourceTree = "<group>"; };
+		792C5C6821C8A2B900A83FCE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		792C5C6A21C8A72A00A83FCE /* CTDateConvertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDateConvertTool.h; sourceTree = "<group>"; };
+		792C5C6B21C8A72A00A83FCE /* CTDateConvertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDateConvertTool.m; sourceTree = "<group>"; };
 		9A42F4736A19747D433AB483 /* Pods-iOSQClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSQClock.debug.xcconfig"; path = "Target Support Files/Pods-iOSQClock/Pods-iOSQClock.debug.xcconfig"; sourceTree = "<group>"; };
 		C65B2373E39A3F31CC80B822 /* Pods-iOSQClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSQClock.release.xcconfig"; path = "Target Support Files/Pods-iOSQClock/Pods-iOSQClock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792C5C6921C8A2BA00A83FCE /* WebKit.framework in Frameworks */,
 				AB6E5083DF885CC2252BC271 /* libPods-iOSQClock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +147,14 @@
 				792C5C6021C89C5B00A83FCE /* MeTableViewController.m */,
 				7910D6D621C7A7CB00DCE4A5 /* NavigationViewController.h */,
 				7910D6D721C7A7CB00DCE4A5 /* NavigationViewController.m */,
+				792C5C6221C8A10900A83FCE /* IntroduceViewController.h */,
+				792C5C6321C8A10900A83FCE /* IntroduceViewController.m */,
+				792C5C6521C8A11B00A83FCE /* OpenSourceViewController.h */,
+				792C5C6621C8A11B00A83FCE /* OpenSourceViewController.m */,
 				7910D6D321C7A55C00DCE4A5 /* UIColor+Hex.h */,
 				7910D6D421C7A55C00DCE4A5 /* UIColor+Hex.m */,
+				792C5C6A21C8A72A00A83FCE /* CTDateConvertTool.h */,
+				792C5C6B21C8A72A00A83FCE /* CTDateConvertTool.m */,
 				7910D69E21C796FC00DCE4A5 /* Main.storyboard */,
 				7910D6A121C796FE00DCE4A5 /* Assets.xcassets */,
 				7910D6A321C796FE00DCE4A5 /* LaunchScreen.storyboard */,
@@ -176,6 +194,7 @@
 		FA1D53478BA45825CF4E98A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				792C5C6821C8A2B900A83FCE /* WebKit.framework */,
 				4FE59BA0A6D870A183549CA1 /* libPods-iOSQClock.a */,
 			);
 			name = Frameworks;
@@ -192,6 +211,7 @@
 				7910D69121C796FC00DCE4A5 /* Sources */,
 				7910D69221C796FC00DCE4A5 /* Frameworks */,
 				7910D69321C796FC00DCE4A5 /* Resources */,
+				9FA34F262E0E89396152FD59 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +328,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9FA34F262E0E89396152FD59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSQClock/Pods-iOSQClock-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSQClock/Pods-iOSQClock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E14381C625D65AF86AB90972 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,9 +384,12 @@
 				7910D6CC21C7A4DC00DCE4A5 /* DownViewController.m in Sources */,
 				7910D6D821C7A7CB00DCE4A5 /* NavigationViewController.m in Sources */,
 				7910D6D521C7A55C00DCE4A5 /* UIColor+Hex.m in Sources */,
+				792C5C6C21C8A72B00A83FCE /* CTDateConvertTool.m in Sources */,
 				7910D6D221C7A52D00DCE4A5 /* TabBarViewController.m in Sources */,
 				792C5C6121C89C5B00A83FCE /* MeTableViewController.m in Sources */,
+				792C5C6721C8A11B00A83FCE /* OpenSourceViewController.m in Sources */,
 				7910D69A21C796FC00DCE4A5 /* AppDelegate.m in Sources */,
+				792C5C6421C8A10900A83FCE /* IntroduceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

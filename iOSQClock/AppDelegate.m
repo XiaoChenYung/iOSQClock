@@ -10,6 +10,7 @@
 #import "TabBarViewController.h"
 #import <AMapLocationKit/AMapLocationKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface AppDelegate ()
 
@@ -23,6 +24,7 @@
     self.window = [[UIWindow alloc] init];
     self.window.rootViewController = [[TabBarViewController alloc] init];
     [self.window makeKeyAndVisible];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [AMapServices sharedServices].apiKey = @"d9a689db106cbb58da3503273b81e52a";
     return YES;
 }
