@@ -27,6 +27,9 @@
                                 <state key="normal" title="提醒自己">
                                     <color key="titleColor" red="0.97244578599999998" green="0.35597872730000002" blue="0.4396837354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="mindMe:" destination="o8F-Ed-TZc" eventType="touchUpInside" id="Ck5-sd-s4q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVk-rn-8oo">
                                 <rect key="frame" x="20" y="603" width="335" height="44"/>
@@ -37,6 +40,9 @@
                                 <state key="normal" title="提醒好友">
                                     <color key="titleColor" red="0.97244578599999998" green="0.35597872730000002" blue="0.4396837354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="mindOther:" destination="o8F-Ed-TZc" eventType="touchUpInside" id="AJR-iv-hKl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入提醒内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMd-fh-lsu">
                                 <rect key="frame" x="16" y="50" width="74" height="15"/>
@@ -134,9 +140,12 @@
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="0F4-Uu-vMm" id="ahy-8G-sbm"/>
+                        <outlet property="addressTipLabel" destination="4wf-j7-W5D" id="du7-OA-9TF"/>
                         <outlet property="datePicker" destination="Whs-qq-JAe" id="2Lf-9H-7lg"/>
                         <outlet property="friendButton" destination="KVk-rn-8oo" id="fOw-Dt-Bs6"/>
                         <outlet property="meButton" destination="stJ-qf-LpJ" id="gED-8u-dg8"/>
+                        <outlet property="switchButton" destination="SxO-JW-k6O" id="Mwx-Py-I6X"/>
+                        <outlet property="textField" destination="bRM-ru-s2J" id="1YX-zx-XuU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POt-6H-kNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -447,18 +456,53 @@
         <!--我的闹钟-->
         <scene sceneID="adi-U4-CMA">
             <objects>
-                <tableViewController title="我的闹钟" id="Nso-MD-onl" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ClocksTableViewController" title="我的闹钟" id="Nso-MD-onl" customClass="ClocksTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5uF-Mt-jkL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="I3e-hD-0Qd">
+                            <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还未添加过闹钟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYc-Y9-OUP">
+                                    <rect key="frame" x="16" y="12" width="343" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="RYc-Y9-OUP" secondAttribute="bottom" constant="11" id="M9I-GS-rET"/>
+                                <constraint firstItem="RYc-Y9-OUP" firstAttribute="top" secondItem="I3e-hD-0Qd" secondAttribute="top" constant="12" id="fJR-VQ-tlY"/>
+                                <constraint firstAttribute="trailing" secondItem="RYc-Y9-OUP" secondAttribute="trailing" constant="16" id="jCy-Xt-ZKM"/>
+                                <constraint firstItem="RYc-Y9-OUP" firstAttribute="leading" secondItem="I3e-hD-0Qd" secondAttribute="leading" constant="16" id="lB5-et-wtd"/>
+                            </constraints>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="x48-3R-y0Y">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="DSf-fe-inh" detailTextLabel="IA9-E9-Kb6" style="IBUITableViewCellStyleSubtitle" id="x48-3R-y0Y">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x48-3R-y0Y" id="Hxd-BU-tyR">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DSf-fe-inh">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IA9-E9-Kb6">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -467,10 +511,13 @@
                             <outlet property="delegate" destination="Nso-MD-onl" id="qrx-LR-XWO"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="tipLabel" destination="RYc-Y9-OUP" id="2lI-UG-CXv"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7p-tR-3FF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="368"/>
+            <point key="canvasLocation" x="377" y="-50"/>
         </scene>
         <!--使用说明-->
         <scene sceneID="Ame-fF-0gi">

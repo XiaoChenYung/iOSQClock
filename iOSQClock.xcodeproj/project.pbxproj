@@ -24,6 +24,11 @@
 		792C5C6721C8A11B00A83FCE /* OpenSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792C5C6621C8A11B00A83FCE /* OpenSourceViewController.m */; };
 		792C5C6921C8A2BA00A83FCE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792C5C6821C8A2B900A83FCE /* WebKit.framework */; };
 		792C5C6C21C8A72B00A83FCE /* CTDateConvertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 792C5C6B21C8A72A00A83FCE /* CTDateConvertTool.m */; };
+		792C5C6E21C8DCD100A83FCE /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792C5C6D21C8DCD100A83FCE /* UserNotifications.framework */; };
+		792C5C7021C8E6AE00A83FCE /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792C5C6F21C8E6AE00A83FCE /* Messages.framework */; };
+		792C5C7221C8E6B800A83FCE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792C5C7121C8E6B800A83FCE /* MessageUI.framework */; };
+		792C5C7421C8E6C100A83FCE /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792C5C7321C8E6C100A83FCE /* UserNotificationsUI.framework */; };
+		792C5C7721C8EEFF00A83FCE /* ClocksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792C5C7621C8EEFF00A83FCE /* ClocksTableViewController.m */; };
 		AB6E5083DF885CC2252BC271 /* libPods-iOSQClock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE59BA0A6D870A183549CA1 /* libPods-iOSQClock.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +84,12 @@
 		792C5C6821C8A2B900A83FCE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		792C5C6A21C8A72A00A83FCE /* CTDateConvertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDateConvertTool.h; sourceTree = "<group>"; };
 		792C5C6B21C8A72A00A83FCE /* CTDateConvertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDateConvertTool.m; sourceTree = "<group>"; };
+		792C5C6D21C8DCD100A83FCE /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		792C5C6F21C8E6AE00A83FCE /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		792C5C7121C8E6B800A83FCE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		792C5C7321C8E6C100A83FCE /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		792C5C7521C8EEFF00A83FCE /* ClocksTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClocksTableViewController.h; sourceTree = "<group>"; };
+		792C5C7621C8EEFF00A83FCE /* ClocksTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClocksTableViewController.m; sourceTree = "<group>"; };
 		9A42F4736A19747D433AB483 /* Pods-iOSQClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSQClock.debug.xcconfig"; path = "Target Support Files/Pods-iOSQClock/Pods-iOSQClock.debug.xcconfig"; sourceTree = "<group>"; };
 		C65B2373E39A3F31CC80B822 /* Pods-iOSQClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSQClock.release.xcconfig"; path = "Target Support Files/Pods-iOSQClock/Pods-iOSQClock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +99,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792C5C7421C8E6C100A83FCE /* UserNotificationsUI.framework in Frameworks */,
+				792C5C7221C8E6B800A83FCE /* MessageUI.framework in Frameworks */,
+				792C5C7021C8E6AE00A83FCE /* Messages.framework in Frameworks */,
+				792C5C6E21C8DCD100A83FCE /* UserNotifications.framework in Frameworks */,
 				792C5C6921C8A2BA00A83FCE /* WebKit.framework in Frameworks */,
 				AB6E5083DF885CC2252BC271 /* libPods-iOSQClock.a in Frameworks */,
 			);
@@ -145,6 +160,8 @@
 				7910D6D121C7A52D00DCE4A5 /* TabBarViewController.m */,
 				792C5C5F21C89C5B00A83FCE /* MeTableViewController.h */,
 				792C5C6021C89C5B00A83FCE /* MeTableViewController.m */,
+				792C5C7521C8EEFF00A83FCE /* ClocksTableViewController.h */,
+				792C5C7621C8EEFF00A83FCE /* ClocksTableViewController.m */,
 				7910D6D621C7A7CB00DCE4A5 /* NavigationViewController.h */,
 				7910D6D721C7A7CB00DCE4A5 /* NavigationViewController.m */,
 				792C5C6221C8A10900A83FCE /* IntroduceViewController.h */,
@@ -194,6 +211,10 @@
 		FA1D53478BA45825CF4E98A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				792C5C7321C8E6C100A83FCE /* UserNotificationsUI.framework */,
+				792C5C7121C8E6B800A83FCE /* MessageUI.framework */,
+				792C5C6F21C8E6AE00A83FCE /* Messages.framework */,
+				792C5C6D21C8DCD100A83FCE /* UserNotifications.framework */,
 				792C5C6821C8A2B900A83FCE /* WebKit.framework */,
 				4FE59BA0A6D870A183549CA1 /* libPods-iOSQClock.a */,
 			);
@@ -338,12 +359,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSQClock/Pods-iOSQClock-resources.sh",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/UMCShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -379,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792C5C7721C8EEFF00A83FCE /* ClocksTableViewController.m in Sources */,
 				7910D6A821C796FE00DCE4A5 /* main.m in Sources */,
 				7910D6CF21C7A4F900DCE4A5 /* ClockViewController.m in Sources */,
 				7910D6CC21C7A4DC00DCE4A5 /* DownViewController.m in Sources */,

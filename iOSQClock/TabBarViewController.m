@@ -26,10 +26,10 @@
     vc1.tabBarItem = it1;
     NavigationViewController *nav1 = [[NavigationViewController alloc] initWithRootViewController:vc1];
     
-    DownViewController *vc2 = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"DownViewController"];
-    UITabBarItem *it2 = [[UITabBarItem alloc] initWithTitle:@"倒计时" image:[UIImage imageNamed:@"count"] selectedImage:[UIImage imageNamed:@"count_sel"]];
-    vc2.tabBarItem = it2;
-    NavigationViewController *nav2 = [[NavigationViewController alloc] initWithRootViewController:vc2];
+//    DownViewController *vc2 = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"DownViewController"];
+//    UITabBarItem *it2 = [[UITabBarItem alloc] initWithTitle:@"倒计时" image:[UIImage imageNamed:@"count"] selectedImage:[UIImage imageNamed:@"count_sel"]];
+//    vc2.tabBarItem = it2;
+//    NavigationViewController *nav2 = [[NavigationViewController alloc] initWithRootViewController:vc2];
     
     MeTableViewController *vc3 = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MeTableViewController"];
     UITabBarItem *it3 = [[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@"me"] selectedImage:[UIImage imageNamed:@"me_sel"]];
@@ -37,7 +37,7 @@
     NavigationViewController *nav3 = [[NavigationViewController alloc] initWithRootViewController:vc3];
     
     [self addChildViewController:nav1];
-    [self addChildViewController:nav2];
+//    [self addChildViewController:nav2];
     [self addChildViewController:nav3];
     
     [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]];

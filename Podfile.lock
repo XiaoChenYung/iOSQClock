@@ -3,22 +3,42 @@ PODS:
   - AMapLocation-NO-IDFA (2.6.1):
     - AMapFoundation-NO-IDFA (~> 1.4)
   - SVProgressHUD (2.2.5)
+  - UMCCommon (1.5.3)
+  - UMCShare/Core (6.9.5):
+    - UMCCommon
+  - UMCShare/Social/Email (6.9.5):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/SMS (6.9.5):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/UI (6.9.5):
+    - UMCCommon
+    - UMCShare/Core
 
 DEPENDENCIES:
   - AMapLocation-NO-IDFA
   - SVProgressHUD
+  - UMCCommon
+  - UMCShare/Social/Email
+  - UMCShare/Social/SMS
+  - UMCShare/UI
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AMapFoundation-NO-IDFA
     - AMapLocation-NO-IDFA
     - SVProgressHUD
+    - UMCCommon
+    - UMCShare
 
 SPEC CHECKSUMS:
   AMapFoundation-NO-IDFA: a09d8cef57c10d4f841595829a574bcea67fc323
   AMapLocation-NO-IDFA: ffd69b8b88f553d0b252d4967bf301ad2afff9c0
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UMCCommon: 016af43c0f769feb1ae1861d65aaf2b23b89c9c7
+  UMCShare: 552b29753f1b4da87b51d96545ed19e6263df397
 
-PODFILE CHECKSUM: 11dddae4d24e019bbb5d417bcefde4a8f2ae3e90
+PODFILE CHECKSUM: 6656056ab0f2692f7084a841e73763a00ee1db79
 
 COCOAPODS: 1.6.0.beta.2

@@ -11,6 +11,8 @@
 #import <AMapLocationKit/AMapLocationKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <SVProgressHUD/SVProgressHUD.h>
+#import <UMCommon/UMCommon.h>
+#import <UMShare/UMShare.h>
 
 @interface AppDelegate ()
 
@@ -26,6 +28,9 @@
     [self.window makeKeyAndVisible];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [AMapServices sharedServices].apiKey = @"d9a689db106cbb58da3503273b81e52a";
+    [UMSocialGlobal shareInstance].isUsingHttpsWhenShareContent = true;
+    [UMConfigure initWithAppkey:@"5c18b016f1f556654f00001d" channel:@"App Store"];
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
     return YES;
 }
 
