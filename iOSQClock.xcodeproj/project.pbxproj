@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7910D69A21C796FC00DCE4A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D69921C796FC00DCE4A5 /* AppDelegate.m */; };
+		7910D6A021C796FC00DCE4A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7910D69E21C796FC00DCE4A5 /* Main.storyboard */; };
+		7910D6A221C796FE00DCE4A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7910D6A121C796FE00DCE4A5 /* Assets.xcassets */; };
+		7910D6A521C796FE00DCE4A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7910D6A321C796FE00DCE4A5 /* LaunchScreen.storyboard */; };
+		7910D6A821C796FE00DCE4A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D6A721C796FE00DCE4A5 /* main.m */; };
+		7910D6B221C796FF00DCE4A5 /* iOSQClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D6B121C796FF00DCE4A5 /* iOSQClockTests.m */; };
+		7910D6BD21C796FF00DCE4A5 /* iOSQClockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D6BC21C796FF00DCE4A5 /* iOSQClockUITests.m */; };
+		7910D6CC21C7A4DC00DCE4A5 /* DownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D6CB21C7A4DC00DCE4A5 /* DownViewController.m */; };
+		7910D6CF21C7A4F900DCE4A5 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D6CE21C7A4F900DCE4A5 /* ClockViewController.m */; };
+		7910D6D221C7A52D00DCE4A5 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D6D121C7A52D00DCE4A5 /* TabBarViewController.m */; };
+		7910D6D521C7A55C00DCE4A5 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D6D421C7A55C00DCE4A5 /* UIColor+Hex.m */; };
+		7910D6D821C7A7CB00DCE4A5 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7910D6D721C7A7CB00DCE4A5 /* NavigationViewController.m */; };
+		792C5C6121C89C5B00A83FCE /* MeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792C5C6021C89C5B00A83FCE /* MeTableViewController.m */; };
+		AB6E5083DF885CC2252BC271 /* libPods-iOSQClock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE59BA0A6D870A183549CA1 /* libPods-iOSQClock.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7910D6AE21C796FF00DCE4A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7910D68D21C796FC00DCE4A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7910D69421C796FC00DCE4A5;
+			remoteInfo = iOSQClock;
+		};
+		7910D6B921C796FF00DCE4A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7910D68D21C796FC00DCE4A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7910D69421C796FC00DCE4A5;
+			remoteInfo = iOSQClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4FE59BA0A6D870A183549CA1 /* libPods-iOSQClock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSQClock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7910D69521C796FC00DCE4A5 /* iOSQClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSQClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7910D69821C796FC00DCE4A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7910D69921C796FC00DCE4A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7910D69F21C796FC00DCE4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7910D6A121C796FE00DCE4A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7910D6A421C796FE00DCE4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7910D6A621C796FE00DCE4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7910D6A721C796FE00DCE4A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7910D6AD21C796FF00DCE4A5 /* iOSQClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSQClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7910D6B121C796FF00DCE4A5 /* iOSQClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSQClockTests.m; sourceTree = "<group>"; };
+		7910D6B321C796FF00DCE4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7910D6B821C796FF00DCE4A5 /* iOSQClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSQClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7910D6BC21C796FF00DCE4A5 /* iOSQClockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSQClockUITests.m; sourceTree = "<group>"; };
+		7910D6BE21C796FF00DCE4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7910D6CA21C7A4DC00DCE4A5 /* DownViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownViewController.h; sourceTree = "<group>"; };
+		7910D6CB21C7A4DC00DCE4A5 /* DownViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownViewController.m; sourceTree = "<group>"; };
+		7910D6CD21C7A4F900DCE4A5 /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
+		7910D6CE21C7A4F900DCE4A5 /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
+		7910D6D021C7A52D00DCE4A5 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		7910D6D121C7A52D00DCE4A5 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		7910D6D321C7A55C00DCE4A5 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		7910D6D421C7A55C00DCE4A5 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		7910D6D621C7A7CB00DCE4A5 /* NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		7910D6D721C7A7CB00DCE4A5 /* NavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		792C5C5F21C89C5B00A83FCE /* MeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewController.h; sourceTree = "<group>"; };
+		792C5C6021C89C5B00A83FCE /* MeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewController.m; sourceTree = "<group>"; };
+		9A42F4736A19747D433AB483 /* Pods-iOSQClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSQClock.debug.xcconfig"; path = "Target Support Files/Pods-iOSQClock/Pods-iOSQClock.debug.xcconfig"; sourceTree = "<group>"; };
+		C65B2373E39A3F31CC80B822 /* Pods-iOSQClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSQClock.release.xcconfig"; path = "Target Support Files/Pods-iOSQClock/Pods-iOSQClock.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7910D69221C796FC00DCE4A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6E5083DF885CC2252BC271 /* libPods-iOSQClock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7910D6AA21C796FF00DCE4A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7910D6B521C796FF00DCE4A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7910D68C21C796FC00DCE4A5 = {
+			isa = PBXGroup;
+			children = (
+				7910D69721C796FC00DCE4A5 /* iOSQClock */,
+				7910D6B021C796FF00DCE4A5 /* iOSQClockTests */,
+				7910D6BB21C796FF00DCE4A5 /* iOSQClockUITests */,
+				7910D69621C796FC00DCE4A5 /* Products */,
+				E2D19F86A29C70FE38101F04 /* Pods */,
+				FA1D53478BA45825CF4E98A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7910D69621C796FC00DCE4A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7910D69521C796FC00DCE4A5 /* iOSQClock.app */,
+				7910D6AD21C796FF00DCE4A5 /* iOSQClockTests.xctest */,
+				7910D6B821C796FF00DCE4A5 /* iOSQClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7910D69721C796FC00DCE4A5 /* iOSQClock */ = {
+			isa = PBXGroup;
+			children = (
+				7910D69821C796FC00DCE4A5 /* AppDelegate.h */,
+				7910D69921C796FC00DCE4A5 /* AppDelegate.m */,
+				7910D6CA21C7A4DC00DCE4A5 /* DownViewController.h */,
+				7910D6CB21C7A4DC00DCE4A5 /* DownViewController.m */,
+				7910D6CD21C7A4F900DCE4A5 /* ClockViewController.h */,
+				7910D6CE21C7A4F900DCE4A5 /* ClockViewController.m */,
+				7910D6D021C7A52D00DCE4A5 /* TabBarViewController.h */,
+				7910D6D121C7A52D00DCE4A5 /* TabBarViewController.m */,
+				792C5C5F21C89C5B00A83FCE /* MeTableViewController.h */,
+				792C5C6021C89C5B00A83FCE /* MeTableViewController.m */,
+				7910D6D621C7A7CB00DCE4A5 /* NavigationViewController.h */,
+				7910D6D721C7A7CB00DCE4A5 /* NavigationViewController.m */,
+				7910D6D321C7A55C00DCE4A5 /* UIColor+Hex.h */,
+				7910D6D421C7A55C00DCE4A5 /* UIColor+Hex.m */,
+				7910D69E21C796FC00DCE4A5 /* Main.storyboard */,
+				7910D6A121C796FE00DCE4A5 /* Assets.xcassets */,
+				7910D6A321C796FE00DCE4A5 /* LaunchScreen.storyboard */,
+				7910D6A621C796FE00DCE4A5 /* Info.plist */,
+				7910D6A721C796FE00DCE4A5 /* main.m */,
+			);
+			path = iOSQClock;
+			sourceTree = "<group>";
+		};
+		7910D6B021C796FF00DCE4A5 /* iOSQClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				7910D6B121C796FF00DCE4A5 /* iOSQClockTests.m */,
+				7910D6B321C796FF00DCE4A5 /* Info.plist */,
+			);
+			path = iOSQClockTests;
+			sourceTree = "<group>";
+		};
+		7910D6BB21C796FF00DCE4A5 /* iOSQClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7910D6BC21C796FF00DCE4A5 /* iOSQClockUITests.m */,
+				7910D6BE21C796FF00DCE4A5 /* Info.plist */,
+			);
+			path = iOSQClockUITests;
+			sourceTree = "<group>";
+		};
+		E2D19F86A29C70FE38101F04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A42F4736A19747D433AB483 /* Pods-iOSQClock.debug.xcconfig */,
+				C65B2373E39A3F31CC80B822 /* Pods-iOSQClock.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA1D53478BA45825CF4E98A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FE59BA0A6D870A183549CA1 /* libPods-iOSQClock.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7910D69421C796FC00DCE4A5 /* iOSQClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7910D6C121C796FF00DCE4A5 /* Build configuration list for PBXNativeTarget "iOSQClock" */;
+			buildPhases = (
+				E14381C625D65AF86AB90972 /* [CP] Check Pods Manifest.lock */,
+				7910D69121C796FC00DCE4A5 /* Sources */,
+				7910D69221C796FC00DCE4A5 /* Frameworks */,
+				7910D69321C796FC00DCE4A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSQClock;
+			productName = iOSQClock;
+			productReference = 7910D69521C796FC00DCE4A5 /* iOSQClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7910D6AC21C796FF00DCE4A5 /* iOSQClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7910D6C421C796FF00DCE4A5 /* Build configuration list for PBXNativeTarget "iOSQClockTests" */;
+			buildPhases = (
+				7910D6A921C796FF00DCE4A5 /* Sources */,
+				7910D6AA21C796FF00DCE4A5 /* Frameworks */,
+				7910D6AB21C796FF00DCE4A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7910D6AF21C796FF00DCE4A5 /* PBXTargetDependency */,
+			);
+			name = iOSQClockTests;
+			productName = iOSQClockTests;
+			productReference = 7910D6AD21C796FF00DCE4A5 /* iOSQClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7910D6B721C796FF00DCE4A5 /* iOSQClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7910D6C721C796FF00DCE4A5 /* Build configuration list for PBXNativeTarget "iOSQClockUITests" */;
+			buildPhases = (
+				7910D6B421C796FF00DCE4A5 /* Sources */,
+				7910D6B521C796FF00DCE4A5 /* Frameworks */,
+				7910D6B621C796FF00DCE4A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7910D6BA21C796FF00DCE4A5 /* PBXTargetDependency */,
+			);
+			name = iOSQClockUITests;
+			productName = iOSQClockUITests;
+			productReference = 7910D6B821C796FF00DCE4A5 /* iOSQClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7910D68D21C796FC00DCE4A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = chainedbox;
+				TargetAttributes = {
+					7910D69421C796FC00DCE4A5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7910D6AC21C796FF00DCE4A5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7910D69421C796FC00DCE4A5;
+					};
+					7910D6B721C796FF00DCE4A5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7910D69421C796FC00DCE4A5;
+					};
+				};
+			};
+			buildConfigurationList = 7910D69021C796FC00DCE4A5 /* Build configuration list for PBXProject "iOSQClock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7910D68C21C796FC00DCE4A5;
+			productRefGroup = 7910D69621C796FC00DCE4A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7910D69421C796FC00DCE4A5 /* iOSQClock */,
+				7910D6AC21C796FF00DCE4A5 /* iOSQClockTests */,
+				7910D6B721C796FF00DCE4A5 /* iOSQClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7910D69321C796FC00DCE4A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7910D6A521C796FE00DCE4A5 /* LaunchScreen.storyboard in Resources */,
+				7910D6A221C796FE00DCE4A5 /* Assets.xcassets in Resources */,
+				7910D6A021C796FC00DCE4A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7910D6AB21C796FF00DCE4A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7910D6B621C796FF00DCE4A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E14381C625D65AF86AB90972 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSQClock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7910D69121C796FC00DCE4A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7910D6A821C796FE00DCE4A5 /* main.m in Sources */,
+				7910D6CF21C7A4F900DCE4A5 /* ClockViewController.m in Sources */,
+				7910D6CC21C7A4DC00DCE4A5 /* DownViewController.m in Sources */,
+				7910D6D821C7A7CB00DCE4A5 /* NavigationViewController.m in Sources */,
+				7910D6D521C7A55C00DCE4A5 /* UIColor+Hex.m in Sources */,
+				7910D6D221C7A52D00DCE4A5 /* TabBarViewController.m in Sources */,
+				792C5C6121C89C5B00A83FCE /* MeTableViewController.m in Sources */,
+				7910D69A21C796FC00DCE4A5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7910D6A921C796FF00DCE4A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7910D6B221C796FF00DCE4A5 /* iOSQClockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7910D6B421C796FF00DCE4A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7910D6BD21C796FF00DCE4A5 /* iOSQClockUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7910D6AF21C796FF00DCE4A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7910D69421C796FC00DCE4A5 /* iOSQClock */;
+			targetProxy = 7910D6AE21C796FF00DCE4A5 /* PBXContainerItemProxy */;
+		};
+		7910D6BA21C796FF00DCE4A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7910D69421C796FC00DCE4A5 /* iOSQClock */;
+			targetProxy = 7910D6B921C796FF00DCE4A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7910D69E21C796FC00DCE4A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7910D69F21C796FC00DCE4A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7910D6A321C796FE00DCE4A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7910D6A421C796FE00DCE4A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7910D6BF21C796FF00DCE4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7910D6C021C796FF00DCE4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7910D6C221C796FF00DCE4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A42F4736A19747D433AB483 /* Pods-iOSQClock.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = R557A74A96;
+				INFOPLIST_FILE = iOSQClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yh.HDKoreanDrama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = HDKoreanDrama_Development;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7910D6C321C796FF00DCE4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C65B2373E39A3F31CC80B822 /* Pods-iOSQClock.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = R557A74A96;
+				INFOPLIST_FILE = iOSQClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yh.HDKoreanDrama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = HDKoreanDrama_Distribution;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7910D6C521C796FF00DCE4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R557A74A96;
+				INFOPLIST_FILE = iOSQClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chainedbox.iOSQClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSQClock.app/iOSQClock";
+			};
+			name = Debug;
+		};
+		7910D6C621C796FF00DCE4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R557A74A96;
+				INFOPLIST_FILE = iOSQClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chainedbox.iOSQClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSQClock.app/iOSQClock";
+			};
+			name = Release;
+		};
+		7910D6C821C796FF00DCE4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R557A74A96;
+				INFOPLIST_FILE = iOSQClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chainedbox.iOSQClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSQClock;
+			};
+			name = Debug;
+		};
+		7910D6C921C796FF00DCE4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R557A74A96;
+				INFOPLIST_FILE = iOSQClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chainedbox.iOSQClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSQClock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7910D69021C796FC00DCE4A5 /* Build configuration list for PBXProject "iOSQClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7910D6BF21C796FF00DCE4A5 /* Debug */,
+				7910D6C021C796FF00DCE4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7910D6C121C796FF00DCE4A5 /* Build configuration list for PBXNativeTarget "iOSQClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7910D6C221C796FF00DCE4A5 /* Debug */,
+				7910D6C321C796FF00DCE4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7910D6C421C796FF00DCE4A5 /* Build configuration list for PBXNativeTarget "iOSQClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7910D6C521C796FF00DCE4A5 /* Debug */,
+				7910D6C621C796FF00DCE4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7910D6C721C796FF00DCE4A5 /* Build configuration list for PBXNativeTarget "iOSQClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7910D6C821C796FF00DCE4A5 /* Debug */,
+				7910D6C921C796FF00DCE4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7910D68D21C796FC00DCE4A5 /* Project object */;
+}
