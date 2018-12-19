@@ -556,6 +556,7 @@
                         <viewLayoutGuide key="safeArea" id="xfz-HK-uvs"/>
                     </view>
                     <connections>
+                        <outlet property="progressView" destination="XOU-QG-jMK" id="Ywa-cY-OAn"/>
                         <outlet property="webView" destination="1Be-HR-cWW" id="IzH-tm-gXX"/>
                     </connections>
                 </viewController>
