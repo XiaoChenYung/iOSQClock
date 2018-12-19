@@ -563,10 +563,10 @@
             </objects>
             <point key="canvasLocation" x="335" y="1044"/>
         </scene>
-        <!--开源项目-->
+        <!--开源地址-->
         <scene sceneID="cmb-FD-94p">
             <objects>
-                <viewController title="开源项目" id="EiD-rU-hIK" customClass="OpenSourceViewController" sceneMemberID="viewController">
+                <viewController title="开源地址" id="EiD-rU-hIK" customClass="OpenSourceViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwP-SD-thY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -60,6 +60,10 @@
     // Do any additional setup after loading the view.
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return false;
+}
+
 - (IBAction)switchChange:(UISwitch *)sender {
     if (sender.isOn) {
         _manager = [CLLocationManager new];
